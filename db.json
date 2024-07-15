@@ -1,0 +1,20 @@
+{
+  "profiles": [
+    {
+      "id": "ed6f",
+      "name": "Meu nome",
+      "role": "admin",
+      "age": 29
+    },
+    {
+      "id": "0",
+      "name": "nanddo",
+      "role": "",
+      "age": 75,
+      "email": "ananfas@gmail",
+      "isActive": false,
+      "country": "brasiç",
+      "experience": "asdasd"
+    }
+  ]
+}

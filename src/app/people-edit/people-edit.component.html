@@ -1,0 +1,34 @@
+<h2>Edição de Pessoa</h2>
+<form (ngSubmit)="onSubmit()" #personForm="ngForm">
+  
+  <div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required [(ngModel)]="person.name" name="nome">
+  </div>
+  <div>
+    <label for="perfil">Perfil:</label>
+    <input type="text" id="perfil" required [(ngModel)]="person.role" name="perfil">
+  </div>
+  <div>
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" required [(ngModel)]="person.age" name="idade">
+  </div>
+  <div>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" required [(ngModel)]="person.email" name="email">
+  </div>
+  <div>
+    <label for="ativo">Ativo:</label>
+    <input type="checkbox" id="ativo" [(ngModel)]="person.isActive" name="ativo">
+  </div>
+  <div>
+    <label for="pais">País:</label>
+    <input type="text" id="pais" [(ngModel)]="person.country" name="pais">
+  </div>
+  <div>
+    <label for="nivelExperiencia">Nível de Experiência:</label>
+    <input type="text" id="nivelExperiencia" [(ngModel)]="person.experience" name="nivelExperiencia">
+  </div>
+  <button type="submit">Salvar</button>
+</form>
+<button type="button" (click)="home()">Voltar à Lista</button>
